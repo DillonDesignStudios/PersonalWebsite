@@ -1,0 +1,282 @@
+/**********************************************************
+                            COLORS                                                  
+
+    Blue: rgba(149, 207, 255, 0.7)
+    Pink: rgba(255, 207, 245, 0.74)
+    Dark Gray: #4d4d4d  // OR // rgb(77, 77, 77)
+    Green/Yellow: rgba(189, 255, 113, 0.7)
+    Red/Pink: rgba(255, 60, 118, 0.89)
+
+
+**********************************************************/
+
+
+
+/**********************************************************
+                        UNIVERSAL                                               
+**********************************************************/
+* {
+    margin: 0;
+    font-family: 'Montserrat', 'Lato', sans-serif;
+    color: #f6f6f6;
+}
+
+p,
+blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    transition: all 0.5s ease;
+}
+
+.bgActive {
+    background-color: rgba(77, 77, 77);
+}
+
+
+
+/**********************************************************
+                        NAVIGATION                                         
+**********************************************************/
+header {
+    padding: 20px;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+    background-image: -ms--linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+nav ul {
+    position: absolute;
+    width: 20%;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+    height: 99%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    display: block;
+    width: 49%;
+    padding: 2em 2em;
+}
+
+nav ul li a:hover {
+    background-color: rgba(151, 151, 151, 0.3);
+}
+
+.exitBtn {
+    margin-bottom: 1em;
+    margin-top: -1.8em;
+    text-align: left;
+    padding: 0 1.4em;
+}
+
+.exitBtn img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.showDesktop {
+    background-color: rgb(77, 77, 77);
+    width: 35%;
+}
+
+/**********************************************************
+                        HEADER                                      
+**********************************************************/
+.hideMobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 25px;
+    margin-top: 46%;
+    margin-left: 19px;
+}
+
+
+
+/**********************************************************
+                    HERO TEXT BOX                                          
+**********************************************************/
+.heroTextBox {
+    position: absolute;
+    width: 82%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 58px;
+}
+
+.heroTextBox h1 {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 1.2em;
+    text-shadow: none;
+}
+
+.scrollIcon {
+    margin-top: 45%;
+    font-size: 2em;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+.heroTextBox h1,
+.subHeading,
+.scrollIcon,
+span {
+    color: #f6f6f6;
+}
+
+.subHeading {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border: #f6f6f6 solid 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #f6f6f6;
+    margin: 0 auto;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heroTextBox a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/**********************************************************
+                      ABOUT                                               
+**********************************************************/
+.about {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    padding-top: 10px;
+    padding: 20px;
+}
+
+.about p {
+    margin-top: 30px;
+    line-height: 200%;
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 300;
+    color: white;
+}
+
+h2:before {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.bitmoji {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/**********************************************************
+                DETAILS CONTAINER                                             
+**********************************************************/
+.whiteContainer {
+    background-color: #f6f6f6;
+    margin-top: -4px;
+}
+
+.whiteContainer h2 {
+    color: #4d4d4d;
+    font-size: 1.4em;
+}
+
+.whiteContainer h2::before,
+.whiteContainer h2::after {
+    display: none;
+}
+
+.whiteContainer p {
+    color: #4d4d4d;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.slider,
+.brush,
+.clock {
+    font-size: 2em;
+    color: rgba(255, 60, 118, 0.89);
+    margin-bottom: 15px;
+}
+
+.slider {
+    margin-top: 30px;
+}
