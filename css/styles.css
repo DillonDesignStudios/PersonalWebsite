@@ -39,8 +39,6 @@ ul {
 }
 
 body {
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -55,15 +53,11 @@ body {
 **********************************************************/
 header {
     padding: 20px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(255, 33, 100, 0.651))), url(../img/desk.jpg);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
-    background-image: -ms--linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
-    background-size: cover;
+    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg); */
+    background-image: url(/img/deskMobile.jpg);
     background-position: center;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 nav ul {
@@ -114,11 +108,7 @@ nav ul li a:hover {
 }
 
 header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -138,8 +128,6 @@ header {
     width: 82%;
     top: 60%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin-top: 58px;
 }
@@ -161,30 +149,15 @@ span {
 .scrollIcon {
     margin-top: 45%;
     font-size: 2em;
-    -webkit-animation: move 1s infinite alternate;
     animation: move 1s infinite alternate;
-}
-
-@-webkit-keyframes move {
-    0% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-
-    100% {
-        -webkit-transform: translateY(15px);
-        transform: translateY(15px);
-    }
 }
 
 @keyframes move {
     0% {
-        -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
 
     100% {
-        -webkit-transform: translateY(15px);
         transform: translateY(15px);
     }
 }
@@ -211,7 +184,6 @@ span {
     font-size: 1.5em;
     color: #f6f6f6;
     margin: 0 auto;
-    -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -220,7 +192,6 @@ span {
 }
 
 .btn:hover {
-    -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -306,5 +277,74 @@ h2::after {
 }
 
 .slider {
+    margin-top: 30px;
+}
+
+
+/**********************************************************
+                    TESTIMONIALS                                                
+**********************************************************/
+.grayContainer {
+    background-color: #4d4d4d;
+}
+
+.grayContainer h2 {
+    font-size: 1.8em;
+}
+
+.grayContainer .container {
+    margin: 30px 0px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.grayContainer figure {
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+/**********************************************************
+                        CLIENTS                                             
+**********************************************************/
+.clients {
+    background-color: white;
+}
+
+.clients .container {
+    margin: 30px 0px;
+}
+
+.clients h2 {
+    color: #4d4d4d;
+    font-size: 2em;
+}
+
+.clients h2::before,
+.clients h2::after {
+    content: "";
+    display: block;
+    background-color: #4d4d4d;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.clients h2::before {
+    margin-bottom: 20px;
+}
+
+.clients h2::after {
+    margin-top: 20px;
+}
+
+.clients img {
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+#logos {
     margin-top: 30px;
 }

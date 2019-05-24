@@ -1,0 +1,90 @@
+/**********************************************************
+                       > 516px                                              
+**********************************************************/
+@media only screen and (min-width: 517px) {
+
+    header {
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+        background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+    }
+
+    .showDesktop {
+        width: 150px;
+    }
+
+    .heroTextBox {
+        margin-top: 100px;
+    }
+
+    .heroTextBox h1 {
+        font-size: 2.2em;
+    }
+
+    .scrollIcon {
+        margin-top: 25%;
+    }
+
+    .subHeading {
+        font-size: 1.1em;
+        margin-bottom: 60px;
+    }
+
+    #bitmoji {
+        display: none;
+    }
+
+    .whiteContainer p {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .grayContainer blockquote {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .clients img {
+        width: 50%;
+    }
+}
+
+
+
+
+
+/**********************************************************
+                       > 768px                                              
+**********************************************************/
+@media only screen and (min-width: 768px) {
+
+    header {
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+        background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
+    }
+
+    .heroTextBox {
+        margin-top: 100px;
+    }
+
+    .heroTextBox h1 {
+        font-size: 2.2em;
+    }
+
+}
+
+/**********************************************************
+                       > 1200px                                              
+**********************************************************/
+@media only screen and (min-width: 1200px) {
+
+    #logos {
+        display: flex;
+        width: 100%;
+    }
+
+
+    .clients img {
+        width: 70%;
+    }
+
+}
