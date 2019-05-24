@@ -53,6 +53,7 @@ body {
 **********************************************************/
 header {
     padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
     background-image: -ms--linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 33, 100, 0.651)), url(../img/desk.jpg);
     background-size: cover;
